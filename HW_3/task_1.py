@@ -12,7 +12,7 @@ Array = [random.randint(A, B) for _ in range(n)]
 print(Array)
 x = int(input("Введите число, которое будет подсчитано сколько раз встречается в массиве:"))
 count = 0
-for i in range(0, len(Array)):
-    if Array [i] == x:
+for i in Array:
+    if i == x:
         count += 1 
 print(count)
