@@ -6,7 +6,7 @@
 k = int (input("Введите количество долек: "))
 n = int (input("Введите размер шоколадки по горизонтали: "))
 m = int (input("Введите размер шоколадки по вертикали: "))
-if k == n or k == m or k >= n*2 or k >= m*2:
+if (k%m == 0 or k%n == 0) and 0 < k < n*m:
     print("YES")
 else:
     print("NO")
